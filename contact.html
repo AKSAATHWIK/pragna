@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="contact-col">
-                <form action="form-handler.php" method="post">
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="email" name="email"placeholder="Enter email address" required>
                     <input type="text" name="subject" placeholder="Enter your subject" required>
@@ -69,5 +69,23 @@
                 navLinks.style.right = "-200px";
             }
         </script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function SendEmail(){
+        Email.send({
+            Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "pragnalegalservices@gmail.com",
+    Password : "vscs@456",
+    To : 'pragnalegalservices@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Enquiry From Website",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
     </body>
 </html>
