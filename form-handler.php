@@ -4,7 +4,7 @@ $visitor_email= $_POST['email'];
 $subject= $_POST['subject'];
 $message= $_POST['message'];
 
-$email_form = 'pragna.co.in/contact.html';
+$email_form = 'pragna.co.in';
 
 $email_subject = 'New Form Submission';
 
