@@ -72,8 +72,7 @@
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-    function SendEmail(){
-        Email.send({
+    function sendEmail(){
             Email.send({
     Host : "smtp.yourisp.com",
     Username : "pragnalegalservices@gmail.com",
@@ -85,7 +84,7 @@
 }).then(
   message => alert(message)
 );
-    }
+}
 </script>
     </body>
 </html>
